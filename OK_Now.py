@@ -463,7 +463,7 @@ def b(uid,pwx,tl):
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'same-origin',
             'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': 1 
+            'upgrade-insecure-requests': '1', 
             'user-agent': pro}
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
